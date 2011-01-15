@@ -1,0 +1,537 @@
+<html>
+<head>
+<title>C++ tutorial</title>
+</head>
+<body>
+<h1>C++ tutorial for beginners</h1>
+
+<p>
+C++ is a statically typed, free-form, multi-paradigm, compiled, general-purpose programming
+language. It's one of the most popular programming languages and it is widely used in the
+software industry.
+</p>
+<hr>
+<h2>Contents</h2>
+<ul>
+    <li>1. Preparation</li>
+    <ul>
+        <li>1.1 Windows</li>
+        <li> 1.2 Linux</li>
+    </ul>
+    <li> 2. Hello World</li>
+    <ul>
+        <li>2.1 Explanation of the Hello World example</li>
+    </ul>
+    <li>3. Comments</li>
+    <li>4. Variables and primitive data types</li>
+    <ul>
+        <li>4.1 Declaration and initialization of variables</li>
+        <li>4.2 Using variables</li>
+        <li>4.3 Primitive data types in C++ (chart)</li>
+    </ul>
+    <li>5. Conditional statements and boolean expressions</li>
+    <ul>
+        <li> 6.1 if statements</li>
+        <li> 6.2 if/else statements</li>
+        <li> 6.3 switch statements</li>
+        <li> 6.4 The ternary conditional</li>
+        <li>6.5 Boolean expressions</li>
+    </ul>
+    <li>6. Loops</li>
+    <ul>
+        <li>6.1 while loops</li>
+        <li>6.2 for loops</li>
+        <li>6.3 do loops</li>
+    </ul>
+     <li>7. Functions</li>
+</ul>
+
+<hr>
+<h2>1. Preparation</h2>
+<p>
+    The first step is to get a good IDE (Integrated Development Environment). To be totally
+    honest, you don't really have to get an IDE, but this tutorial will not cover other
+    solutions (yet).
+<p>
+<hr>
+<h3>1.1 Windows</h3>
+<p>
+    If you are a university student you probably have, or can get, an msdnaa account.
+    There you can download Microsoft Visual Studio Professional (VS). Do so.
+</p>
+<p>
+    If you don't have, and can't get, an msdnaa acount, you could use the express edition. It's free.
+    If you really want the professional one, torrent it.
+    If you don't want to torrent it, buy it.
+    If you don't want to buy it either, get one of the following:
+</p>
+<ul>
+<li>Eclipse. - Recommended!</li>
+<li>Netbeans.</li>
+<li>Code::Blocks.</li>
+<li>Trolltechs QT </li>
+</ul>
+<p>
+    Now install whatever you got. Please note that for (at least) Eclipse you'll need a C++ compiler,
+    like g++, included in mingw. You'll also need to properly configure your Path.
+    We won't go into much detail since it's very well documented online.
+</p>
+<hr>
+<h3>1.2 Linux</h3>
+<ul>
+<li>Eclipse with the CDT-plugin.</li>
+<li>Netbeans.</li>
+<li>Code::Blocks.</li>
+<li>Trolltechs QT </li>
+</ul>
+
+<hr>
+
+<h2>2. Hello World</h2>
+<p>
+    Create a new cpp file and write the following:
+</p>
+<pre>
+#include <iostream>
+using namespace std;
+int main() {
+    cout << "Hello World!" << endl;
+    return 0;
+}
+</pre>
+<p>
+    Compile and run it.
+</p>
+<p>
+Add the following line, just before return 0; if you can't see the results:
+</p>
+<pre>
+cin.get();
+</pre>
+<p>
+This line will make the program wait for you to press RETURN. Never replace the above line
+ with system("PAUSE");. A lot of books tell you to do this, but it is bad. Very bad.
+ It's not portable (PAUSE isn't there on *nix) and it's not efficient (your program is
+ halted to let it call a command on your intepreter).
+</p>
+<hr>
+<h3>2.1 Explanation of the Hello World example</h3>
+<p>
+To get a basic understanding of the Hello World program, you will only need to read the
+first sentence(s) in each paragraph below.
+</p>
+<p>
+The first line tells the compiler to insert the iostream header into the file being
+compiled. This particular header provides basic input and output (IO) functionality.
+</p>
+<p>
+    The second line tells the compiler to look for functions in the namespace called std. A
+    statement like this allows you to use the functions declared in that namespace, in the
+    block or cope in which it was stated. The entire C++ standard library is declared within
+    the std namespace.
+</p>
+<p>
+    In the third line we declare a function called main that returns an int (integer). The main
+    function is a special function in C++. The compiler looks for this function and executes it
+    first, even if we have a lot of other functions in our program. It should always return an
+    int. This is important. Do not listen to anyone telling you to write void main() instead of
+    int main(), just to make the code shorter. Google it to get a more in-depth explanation of
+    why this is bad.
+</p>
+<p>
+    The last character on the third line starts a new block. The block is everything between
+    { and } . These are called curly brackets or braces. Between these we define the main
+    function, e.g. we tell the main function what to do.
+</p>
+<p>
+    The fourth line will usually print Hello World on your console/terminal. This is the first
+    thing our main function will do. cout is the standard output stream. << is the operator
+    used to send data to the stream. "Hello World" represents the string Hello World. A string
+    is a sequence of characters. In the fourth line we send the string Hello World to the
+    standard output stream, cout. Next, we manipulate the stream using endl. endl inserts a
+    newline character and flushes the buffer, if used on a buffered stream.
+</p>
+<p>
+    The fifth line returns an int, and the main function exits.
+</p>
+<p>
+    In the sixth line we close the the block that we opened on the third line. This means the
+    definition of the main function is finished.
+</p>
+<hr>
+<h2> 3 Comments</h2>
+<p>
+    Comments are used to explain code, and can work as documentation. It's very easy to comment
+    and it is also very important. The compiler will ignore comments and does not try to
+    understand them. A comment can look like this:
+</p>
+<pre>
+// Print Hello World! on the console.
+cout << "Hello World!" << endl;
+</pre>
+<p>
+    Above we explained what we were going to do. This can help other programmers to understand
+    our code.
+</p>
+<p>
+    A comment can also look like this:
+</p>
+<pre>
+/* Print Hello World! on the console. */
+cout << "Hello World!" << endl;
+</pre>
+<p>
+    You may be asking yourself why you would need two ways to do the same thing. Well, the
+    truth is, they are not the same thing. When using //, the comment will only last for the
+    remainder of the line. That means that this will not work:
+</p>
+<pre>
+//Print Hello World!
+on the console.
+cout << "Hello World!" << endl;
+</pre>
+<p>
+    and this will:
+</p>
+<pre>
+cout << "Hello World!" << endl; //Print Hello World! on the console.
+</pre>
+<p>
+    If we want to write a longer comment it's appropriate to use /* and */. Then, the comment
+     will begin when we write /* and will end when we write */.
+</p>
+<pre>
+/*
+  Prints a pair of tits on the console. Like this:
+
+  (o)(o)
+
+  TITS!
+*/
+cout << "(o)(o)" << endl << endl << "TITS!" << endl;
+</pre>
+<hr>
+<h2>5. Variables and primitive data types</h2>
+
+<hr>
+<h3>5.1 Declaration and initialization of variables</h3>
+<p>
+    As before, we start this section with an example.
+</p>
+<pre>
+int a;
+</pre>
+<p>
+    Above, we declared a variable named a that can hold an int value. Variable declarations are
+    always of the form: type name.
+</p>
+<p>
+    The variable a above has yet to be assigned a value. We can do this by writing:
+</p>
+<pre>
+a = 10;
+</pre>
+<p>
+    The value 10 is now stored in the variable a. This is called an assignment. If this is the
+    first time we assign a value to a we can also call this operation an initialization.
+    However, for this to work, the variable a must have been declared before.
+</p>
+<p>
+    If we wish to declare and initialize a variable in a single statement we can do it like
+    this:
+</p>
+<pre>
+int a = 10;
+</pre>
+<hr>
+<h3>5.2 Using variables</h3>
+<p>
+    We can now use this variable in other operations. We may wish to declare a new variable and
+    initialize it with the same value as a.
+</p>
+<pre>
+int b = a;
+</pre>
+<p>
+    We may also wish to perform different operations depending on the variables type. One way
+    to use int variables is to perform additions.
+</p>
+<pre>
+int a = 10;
+int b = a + 1;
+</pre>
+<p>
+    Above we initialized the variable b with a + 1 which is 11. We can even do something like
+    this:
+</p>
+<pre>
+int a = 10;
+int b = 10;
+b = a + 1;
+int c = b + a;
+</pre>
+<p>
+    The value stored in b has changed from being 10 to being 11. The value stored in c is 21.
+</p>
+<p>
+    Other operation between numeric types can look like this:
+</p>
+<pre>
+a - b
+a * b
+a / b
+a % b //modulo.
+</pre>
+<p>
+    When performing assignments it's important to understand the order in which things happen.
+    We will look at the following example and explain:
+</p>
+<pre>
+int c = b + a;
+</pre>
+<p>
+    First, the expression b + a is evaluated. Then we assign this value to a newly created
+    variable c.
+</p>
+<p>
+    Knowing this we can easily understand the following:
+</p>
+<pre>
+int d = 0;
+d = d + 1;
+</pre>
+<p>
+    What might the value stored in d be? First we have to evaluate d + 1. This turns out to be
+    1. Then, the value 1 is assigned to d.
+</p>
+<p>
+    A short way to do this is by using the += operator. Like this:
+</p>
+<pre>
+int d = 0;
+d += 1;
+</pre>
+<p>
+    The += operator is called a compound-assignment operator. We can perform all arithmetic
+    operations this way. Here are some examples:
+</p>
+<pre>
+int d = 0;
+d += 2;
+d -= 3;
+d *= 4;
+d /= 5;
+</pre>
+<p>
+    In C++, and in a lot of other programming languages, there is a shorthand for changing the
+    value stored in an integer variable with only 1.
+</p>
+<pre>
+int d = 0;
+d++; // suffix, increment
+d--; // suffix, decrement
+</pre>
+<p>
+    It's important to note that d++ will only add 1 to the value stored in d. I we want to add
+    anything else we will have to use one of the other methods used above and replace 1 with
+    something else.
+</p>
+<p>
+    We now know 2 different ways of changing and int with 1. But that's not the end of the
+    story. We can also do the following:
+</p>
+<pre>
+int d = 0;
+++d; // prefix, increment
+--d; // prefix, decrement
+</pre>
+<p>
+    But how do they differ? The difference may seem subtle but it's important to understand.
+    And we can do just that by looking at the following example:
+</p>
+<pre>
+int d = 0;
+int e = d++;
+int f = ++d;
+</pre>
+<p>
+    If you have never programmed before you may think that e is storing the value 1 and f is
+    storing the value 2. However, one of those assertions are false. When using the suffix
+    increment, the value passed to e is the initial value of d, which is 0. The value store in
+    d is still incremented by 1. When using the prefix increment, the returned value is the new
+    value of d, which is 2.
+</p>
+<hr>
+<h3>5.3 Primitive data types in C++</h3>
+[fix chart]
+<pre>
+Name        Description      Size*   Range*
+char        Character                1byte   signed      -128 to 127 (-2⁷ to 2⁷-1)
+                                             unsigned    0 to 255 (0 to 2⁸-1)
+short int   Integer.                 bytes   signed      -32768 to 32767 (-2¹⁵ to 2¹⁵-1)
+                                             unsigned    0 to 65535 (0 to 2¹⁶-1)
+int         Integer.                 4bytes  signed -2147483648 to 2147483647 (-2³¹ to 2³¹-1)
+                                             unsigned    0 to 4294967295 (0 to 2³²-1)
+long int    Long integer.            4bytes  signed -2147483648 to 2147483647 (-2³¹ to 2³¹-1)
+                                             unsigned    0 to 4294967295 (0 to 2³²-1)
+bool        Boolean value.           1byte   true or false
+float       Floating point number    4bytes  ± 3.4e ± 38     ~7 digits
+double      Double precision floating point number.     8bytes  ± 1.7e ± 308    ~15 digits
+long double Long double precision floating point number.    8bytes  ± 1.7e ± 308    ~15 digits
+wchar_t     Wide character.     2 or 4 bytes    1 wide character
+
+* Size and range are system dependant. The values shown above are those found on most 32-bit systems.
+</pre>
+<hr>
+
+<h2>6. Conditional statements and boolean expressions</h2>
+<p>
+    What happens if we want some code to execute only when a specific condition is true or
+    false? We use a conditional statement of course.
+</p>
+<hr>
+<h3> 6.1 if statements</h3>
+<p>
+    An if statement allows you to control if a program enters a section of code or not based on
+    whether a given condition is true or false. Here is an example:
+</p>
+<pre>
+if (1 < 10) {
+    cout << "Hello" << endl;
+}
+</pre>
+<p>
+    Since 1 is less than 10, the string Hello is printed on the console. This may seem
+    unnecessary since this code will always be executed, since 1 is always smaller than 10.
+    However, if instead of the literals 1 and/or 10 we have int variables that change over time
+    or for some reason are unknown at a given time, we can show the usefulness of the if
+    statement. Lets try again:
+</p>
+<pre>
+// Lets say the int variable "a" is a random number. It can be anything.
+if (a < 10) {
+    cout << "a is smaller than 10" << endl;
+}
+</pre>
+<p>
+    In this case, the execution depends on a.
+</p>
+<p>
+    Every if statement has the following form:
+</p>
+<pre>
+if (boolean expression) {
+    one or more statements
+}
+</pre>
+<hr>
+<h3>6.2 if/else statements</h3>
+<pre>
+// the int variable a is a random number.
+if (a < 10) {
+    cout << "a is smaller than 10" << endl;
+}
+else if (a == 10) {
+    cout << "a is equal to 10" << endl;
+}
+else {
+    cout << "a is greater than 10" << endl;
+}
+</pre>
+<hr>
+<h3>6.3 switch statements</h3>
+<pre>
+// the int variable a holds a random number.
+switch(a) {
+    case 0:
+        cout << "a holds the value 0" << endl;
+        break;
+    case 1:
+        cout << "a holds the value 1" << endl;
+        break;
+    default:
+        cout << "a holds none of the above" << endl;
+        break;
+}
+</pre>
+<p>
+    The switch statement body consists of a series of case labels and an optional default
+    label. Two cases can not evaluate to the same value and the default label may only appear
+    once.
+</p>
+<hr>
+<h3> 6.4 The ternary conditional</h3>
+<p>
+    This is a very interesting conditional statement. The basic syntax is:
+</p>
+<p>
+    boolean expression ? value if true : value if false
+</p>
+<p>
+    We will start by showing an example of a small program using the ternary conditional in
+    different ways:
+</p>
+<pre>
+#include <iostream>
+
+int main() {
+    int a = 0;
+    int b = 1;
+    int c = a < b ? b : a;
+
+    std::cout << c << std::endl;
+    std::cout << (a < b ? "a is smaller" : "b is smaller than or equal to a")
+        << std::endl;
+    return 0;
+}
+</pre>
+<p>
+    This program prints the following.
+</p>
+<pre>
+1
+a is smaller
+</pre>
+<hr>
+<h3>6.5 Boolean expressions</h3>
+<p>
+    Expressions that can evaluate to either true or false are called boolean expressions. A
+    boolean expression often contains comparison operators.
+    These are:
+</p>
+<h4>Comparison operators in C++:</h4>
+<pre>
+    Syntax    Example syntax    Name
+    ==        a == b            Equal to
+    !=        a != b            Not equal to
+    >         a > b             Greater than
+    <         a < b             Less than
+    >=        a >= b            Greater than or equal to
+    <=        a <= b            Less than or equal to
+</pre>
+<p>
+    Boolean expressions may also contain logical operators.
+</p>
+<h4>Logical operators in C++:</h4>
+<pre>
+    Syntax    Example syntax    Name
+    !         !a                not
+    &&        a && b            and
+    ||        a || b            or
+</pre>
+<hr>
+<h2>7. Loops</h2>
+<p>
+    There are various sorts of loops in C++. Loops are simply used to repeat some statements.
+    Make sure you understand conditional statements before reading any further.
+</p>
+<hr>
+<h3>7.1 while loops<h3>
+<p>
+    The most fundamental loop is the while loop.
+</p>
+[edit] for loops
+[edit] do loops
+[edit] Functions
+</body>
+</html>
