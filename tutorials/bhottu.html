@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Bottu Man Pages</title>
+</head>
+<body>
+<center><h1>Bottu Man Pages</h1>
+Bottu is a modular python IRC bot written (mainly) by agaric and chown of irc.rizon.net @ #/g/sicp<br>
+<img src="http://i.imgur.com/v4ErO.png" alt="Can't see the text? TROLLED"></center>
+<fieldset><legend>Index</legend>
+<ol>
+    <li><a href="#Quoting">Quoting</a></li>
+
+    <li><a href="#Replies">Replies</a></li>
+    <li><a href="#Echoing">Echoing</a></li>
+    <li><a href="#Spewing">"Spewing"</a></li>
+    <li><a href="#Greeting">Greeting</a></li>
+    <li><a href="#Colors">Colors</a></li>
+</ol>
+</fieldset>
+
+<br/>
+<h2><a name="Quoting">Quoting</a></h2>
+Quoting adds an entry to a database containing a name and a line.<br>
+Examples:<br><br>
+<FONT style="BACKGROUND-COLOR: 00FFFF">BOTNAME, quote &lt;NAME&gt; QUOTE_TEXT</FONT><br><br>
+Example:<br>
+<FONT style="BACKGROUND-COLOR: 00FFEE">Bottu, quote &lt;example&gt; This is an example<br></FONT><br>
+
+<hr />
+<h2><a name="Replies">Replies</a></h2>
+Replies are complicated, and thus need to be broken down into seperate parts.<br>
+<h3>Replies</h3>
+Replies are one of the more useful features of bottu. Adding a reply allows ops and users to create<br>
+customized echoing commands. Examples and syntax below:<br><br>
+<FONT style="BACKGROUND-COLOR: 00FFFF">BOTNAME, trigger &lt;reply&gt; reply</FONT><br><br>
+Example:<br>
+
+<FONT style="BACKGROUND-COLOR: 00FFFF">BOTNAME, hey &lt;reply&gt; Hello!</FONT><br>
+<h3>Vars</h3>
+Adding vars allows you to randomize or theme some replies. For example<br>
+adding "water", "juice" and "milk" to $DRINK will cause $DRINK to equal<br>
+any of those three words when called inside a reply. Examples below<br><br>
+Example:<br>
+<FONT style="BACKGROUND-COLOR: 00FFFF">BOTNAME, suggest a drink &lt;reply&gt; Why not try $DRINK ?</FONT><br><br>
+
+Adding to variables:<br><br>
+<FONT style="BACKGROUND-COLOR: 00FFFF">BOTNAME, add STRING to VARNAME</FONT><br><br>
+NOTE: If the variable does not currently exist, it is created when you add the first string<br><br>
+<hr />
+<h2><a name="Echoing">Echoing</a></h2>
+Echo is the simplest command you can use with Bottu. Examples below:<br><br>
+Example:<br>
+<FONT style="BACKGROUND-COLOR: 00FFFF">BOTNAME, say TEXT</FONT>
+This just causes Bottu to return TEXT.<br><br>
+
+<hr />
+<h2><a name="Spewing">Spewing</a></h2>
+Name and concept shamelessly stolen from Trent of 7chan (Apologies!)<br>
+Using the spew command, Bottu will return 1 random line said by the given nick<br><br>
+Example:<br>
+<FONT style="BACKGROUND-COLOR: 00FFFF">BOTNAME, spew like NAME</FONT><br><br>
+<hr />
+<h2><a name="Greeting">Greeting</a></h2>
+If you're an authuser (bottu will refer to you as a "GOD" if you are)<br>
+you can set bottu to greet someone upon entering the channel.<br><br>
+
+Example:<br>
+<FONT style="BACKGROUND-COLOR: 00FFFF">BOTNAME, greet NAME GREETING</FONT><br><br>
+NOTE: The bot will not allow people to select their own greetings.<br><br>
+<FONT style="BACKGROUND-COLOR: 00FFFF">BOTNAME, don't greet NAME</FONT><br>
+Will remove the greeting for selected nick.<br><br>
+<hr />
+<h2><a name="Colors">Colors</a></h2>
+If the bot detects a hexadecimal color code (eg, #EEFF00) in a message<br>
+it will return the name of that color (if it knows it). It will also<br>
+
+return a link to an image of that colour, so you can name it yourself
+<br><br>
+Example:<br>
+<FONT style="BACKGROUND-COLOR: 00FFFF">BOTNAME, add color #HEXCODE DEFINITION</FONT><br><br>
+Will add a description for the given color.<br><br>
+</body>
+</html>
