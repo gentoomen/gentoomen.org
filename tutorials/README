@@ -1,5 +1,5 @@
-/g/sicp tutorials doc
-=====================
+/g/sicp tutorials readme
+========================
 
 This is a document to host all tutorials, instructions on writing them and
 making requests for tutorials and comments.
@@ -31,18 +31,16 @@ Contents
     Though it's preferred to concentrate on beginner tuts first, so we can provide beginners
     means to start learning on a specific subject.
 
-
 ========================================================================================
 
 2. General guidelines
 
-
+    Keep it simple and try to put yourself in the readers position when writing.
 
 ========================================================================================
 
 3. Document layout & syntax
 
-    We will be using plain html to format the tuts/docs:
     We will be using plain html to format the tuts/docs:
     <h1> For document title
     <h2> For Major section title ie. 2
@@ -70,11 +68,11 @@ Contents
 
 4.1 Programming / Beginners
 
-    * Python as a first language [OPEN] => http://collabedit.com/6xhpp
+    * Python as a first language [OPEN] => tutorials/pythom.html
         As a first language I think python is the way to go and the python beginner tut should
         reflect this and be more indepth then other beginner tuts.
 
-    * C++ [OPEN] => http://collabedit.com/cqwnr
+    * C++ [OPEN] => cplusplus.html
         General C++ programming tutorial / document
 
 ========================================================================================
@@ -83,13 +81,10 @@ Contents
 ========================================================================================
 4.2 General
 
-    * /g/sicp tutorials doc [OPEN] => http://collabedit.com/bt7rn
-
 ========================================================================================
 5 Requests for comments
 
     Here you can ask for fixing, comments, changing something on tutorials/documents.
     Or you can just ask for someone to help to write a document with youlo.
 
-    * FIX THIS DOC to be HTML
 

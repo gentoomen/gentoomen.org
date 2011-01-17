@@ -1,0 +1,165 @@
+The unofficial /g/ Python tutorial for non-programmers
+======================================================
+
+1. Introduction
+    1.1 Why should Python be your first language, you ask?
+    1.2 Okay then, why not some other language?
+    - ..
+    1.4 Basic concepts, compiled vs interpreted, OO and such?
+
+2. What next
+    2.1 how to get python
+    2.2 basic usage
+    2.3 Python interactive interpreter
+
+3. Theory on basic programming concepts
+    3.1.Basic programming concepts
+        - Variables
+            o Integers
+            o Floating point
+            o Characters/strings
+            o Arrays
+        - Basic arithmetic
+            o +-*/%**
+        - Output
+        - Procedures & functions
+        - Comments
+    3.2 More concepts
+        - Conditionals
+        - Iteration and selection
+        - Input
+        - Files
+    3.3 Python specific concepts
+
+4. Getting feet wet
+    - writing your first prog? #It's a hello world, which will grow
+
+
+
+
+
+1. Why should Python be your first language, you ask?
+=====================================================
+
+    - Python is easy to get started with, it has vey simple syntax
+    - Very expressive, allows you to focus on the solutions to problems instead of the language
+    - Not a fucking toy language, is awesome at gluing together shit
+    - FIOC, Forced Indentation of Code, which makes sure your code doesn't look retarded
+    - It's a high level language, meaning you don't have concentrate on memory management etc.
+    - Interpreted, meaning you can get feedback faster
+    - Portable, it works and runs on most platforms
+
+
+
+*Okay then, why not some other language
+##rewriting needed here
+In most cases, compiled languages are better performance-wise. Python isn't compiled, it's interpreted.
+
+Compilation vs. Interpretation
+
+Compilation means that the code must be "translated" to machine code (the shit your processor understands) before you run your program.
+Well, interpretation also, but it is done on the fly.
+
+Pros for Interpretation:
+* Interpretation supports a quick Write-Review-Modify cycle, which
+   benefits quickly written scripts. Compilation doesn't usually have this
+    advantage, with longer compilation times increading Write-Review-Modify cycle
+
+Cons for Interpretation:
+* Generally has worse performance
+
+Pros for Compilation:
+* Generally generates faster code
+
+Cons for Compilation:
+* Compilation doesn't usually have interpreted code's advantage,
+with longer compilation times increading Write-Review-Modify cycle duration.
+
+Thus, we believe an interpreted language is the ideal for beginners.
+------
+
+Get your hands dirty
+
+We'll be using Python 2.x (any version 2 Python interpreter will do).
+
+Where to get it:
+
+*nix systems (macs included) already have it installed 99% of times, go to your terminal and type
+python --version
+If it succeeds, congrats. If not, download the appropriate version at
+
+http://www.python.org/download/
+(this is also valid for Windows users)
+Remember to get 2.7.1
+
+Download, install, etc. We're not getting into much detail since it's pretty well documented.
+THE NUMBER ONE TOOL FOR ASPIRING PROGRAMMERS IS GOOGLE.
+The problem you have? Probably thousands of other people already had it before and posted it online.
+Continuing.
+
+-----
+Overview of the programming concepts this guide will teach
+==========================================================
+1) Basic programming concepts
+            - Running python code
+            - Variables
+                    o Integers
+                    o Floating point
+                    o Characters/strings
+                    o Arrays
+            - Basic arithmetic
+                    o +-*/%**
+            - Output
+            - Procedures & functions
+            - Comments
+
+2) More concepts
+            - Conditions
+            - Iteration and selection
+            - Input
+            - Files
+
+-----
+The Python Interpreter
+
+Python has an interactive interpreter, launched by the python command (for windows users, select "Python (command line)" from your start menu). It should look similar to this:
+
+Python 2.6.5 (release26-maint, Oct 29 2010, 23:43:31)
+[GCC 4.4.4] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+
+Here, statements can be evaluated and functions executed.
+
+You can use it as a calculator:
+>>> 2+2
+4
+
+BABBY'S FIRST PROGRAM
+
+Yes, it's boring, but bear with me.
+
+>>> print "Hello, world!"
+Hello, world!
+
+As you can see, the print command tells the interpreter "I want this displayed to the user!".
+Notice that there are double quotes (") around the text, but they aren't printed. They're used to delimit the text. Text surrounded by quotes is called a "string" in programming jargon. A string of characters.
+
+How about something more interactive? We could prompt the user for a name, and we can greet that name afterwards. That's easy.
+
+>>> name = input("Your name: ")
+Your name: rms
+>>> print "hello,", name
+Hello, rms
+
+This introduced a bunch of new concepts.
+
+input("Your name: ") is a function. . Functions have parameters, which modify their behavior.
+In this case, the parameter is the prompt to be displayed to the user.
+
+
+name is a variable. A variable has 3 attributes:
+
+Its symbol, how you address it: in this case, it's name.
+Its value, what it contains: in this case, the user input is "rms", so that's its value.
+For completeness' sake, the third attribute is the value's location in memory, but
