@@ -1,90 +1,35 @@
-/g/sicp tutorials readme
-========================
+/g/sicp readme for tuts
 
-This is a document to host all tutorials, instructions on writing them and
-making requests for tutorials and comments.
+This is a document to docuwriters for instructions on writing them and
+making requests for tutorial comments.
 
-========================================================================================
+Just keep it simple and try to put yourself in the readers position when writing.
+If general layout questions or such, just ask in the chan for help/ideas.
 
-Contents
-========
 
-1. Foreword
+Document layout & syntax:
 
-2. General guidelines
+Use plain html to format the tuts/docs, easy to convert and easy to write.
+Vote for LaTex:
 
-3. Document layout & syntax
+<h1> For document title
+<h2> For Major section title ie. 2
+<h3> For Subsection title ie. 2.1
+<h4> For highlighting in subsection or for sub sub section title ie. 2.2.1
+<p> for all text, remember to paragraph enough
+<pre> for code blocks
+<ul><li> for lists, nested if needed
+<hr> between every major and sub section
 
-4. Tutorial and document list
-    4.1 Programming Beginners
-    4.2 Programming Advanced
-    4.3 General
+Using anchors and anchor names is encouraged in table of contents and section titles,
+for easy navigation. Ie. in contents <li><a href="#1.3">nnnanan</a></li> and in body
+<h3><a name="1.3">nnnanan</a></h3>
 
-5. Requests for comments
+See C++ tut for example.
 
-========================================================================================
+You can use something like http://htmledit.squarefree.com/ to do live formatting,
 
-1. Foreword
+RFCs
 
-    Help write more tutorials for us to use. From beginner topics to advanced.
-    Anything from programming and scripting to general tech howto goes.
-    Though it's preferred to concentrate on beginner tuts first, so we can provide beginners
-    means to start learning on a specific subject.
-
-========================================================================================
-
-2. General guidelines
-
-    Keep it simple and try to put yourself in the readers position when writing.
-
-========================================================================================
-
-3. Document layout & syntax
-
-    We will be using plain html to format the tuts/docs:
-    <h1> For document title
-    <h2> For Major section title ie. 2
-    <h3> For Subsection title ie. 2.1
-    <h4> For highlighting in subsection or for sub sub section title ie. 2.2.1
-    <p> for all text, remember to paragraph enough
-    <pre> for code blocks
-    <ul><li> for lists, nested if needed
-    <hr> between every major and sub section
-
-    Using anchors and anchor names is encouraged in table of contents and section titles,
-    for easy navigation. Ie. in contents <li><a href="#1.3">nnnanan</a></li> and in body
-    <h3><a name="1.3">nnnanan</a></h3>
-
-    Note: You can use something like http://htmledit.squarefree.com/ to do live formatting,
-    just remember to save&backup often.
-========================================================================================
-
-4. Tutorial and document list
-
-    List all tutorials here, so if you are starting a tutorial add it here, with a brief
-    description. You can ask for help in the 5. Request for Comments section.
-
-========================================================================================
-
-4.1 Programming / Beginners
-
-    * Python as a first language [OPEN] => tutorials/pythom.html
-        As a first language I think python is the way to go and the python beginner tut should
-        reflect this and be more indepth then other beginner tuts.
-
-    * C++ [OPEN] => cplusplus.html
-        General C++ programming tutorial / document
-
-========================================================================================
-4.1 Programming / Advanced
-
-========================================================================================
-4.2 General
-
-========================================================================================
-5 Requests for comments
-
-    Here you can ask for fixing, comments, changing something on tutorials/documents.
-    Or you can just ask for someone to help to write a document with youlo.
-
+1. Fix everything you see/find to be typoed/wrong/blatantly wrong/or generally messed up
 
