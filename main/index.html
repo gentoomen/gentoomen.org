@@ -1,175 +1,95 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html">
 
 
 <html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+		<link rel="stylesheet" type="text/css" href="_g_sicp.css" />
+		<title> Gentoomen Homepage</title>
+	</head>
 
-<head>
-
-<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
-
-<!--<link rel="stylesheet" type="text/css" href="_g_sicp.css" />
--->
-
-<title> Gentoomen Homepage</title>
-
-
-<style type="text/css">
-
-
-body {
-  background-color: #FFF8DC;
-  margin-right:20%;
-  margin-left:20%;
-  padding: 10px 10px 10px 10px;
-  font-family: sans-serif;
-  border: 1px solid black;
-  
-}
-
-h2 {
-  border-bottom: 2px solid black;
-}
-
-dt {
-  padding-bottom: 2px;
-  }
-
-a {
-  text-decoration: none;
-}
-
-a:link {
-  color: #1426AE;
-}
-
-a:hover {
-  text-decoration; none;
-  border-bottom: 1px solid #1426AE;
-}
-
-a:visited:hover {
-  text-decoration: none;
-  color: #6B1DB9;
-  border-bottom: 1px solid #6B1DB9;
-}
-
-ul, ol {
-  list-style: disc;
-  }
-  
-</style>
-
-</head>
-
-<body>
-    
-  <h1>Gentoomen Community Pages</h1>
-  
-<div id="contents">  
-<h2>Table of Contents</h2>
-
-<ol>
-
-  <li><a href="#home1.0">About Us</a></li>
-  <li><a href="#home2.0">Projects</a></li>
-  <li><a href="#home2.1">Tutorials</a></li>
-  <li><a href="#home2.2">Git</a></li>
-  <li><a href="#home3.0">Info</a></li>
-
-</ol>
-</div>
-
-<h2><a name="home1.0">About Us</a></h2>
-
-<div id="aboutus">
-<p>Some time during december 2010, one of our current members felt pretty bored. He created a 
+	<body>
+		<h1>Gentoomen Community Pages</h1>
+		<div id="contents">  
+			<h2>Table of Contents</h2>
+			<ol>	
+				<li><a href="#aboutus">About Us</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#tutorials">Tutorials</a></li>
+				<li><a href="#git">Git</a></li>
+				<li><a href="#info">Info</a></li>
+			</ol>
+		</div>
+		<div id="aboutus">
+			<h2>About Us</h2>
+			<p>Some time during december 2010, one of our current members felt pretty bored. He created a 
 thread on 4chan's /g/ where
 he proposed to teach programming (in Python) to those with no 
 programming experience. Around 20 people, some complete beginners, some 
 already accomplished programmers, joined up - #/g/sicp @ Rizon was the 
 result. Since then, the has project grown. We also have another IRC channel that's used exclusively for discussing gentoomen matters.</p>
+		</div>
 
-</div>
+		<div id="projects">
+			<h2>Projects</h2>
+			<p>Since everything we do is project based, you can participate in any area or subject you are
+	interested in and think you have something to contribute to.  </p>
 
-<div id="projects">
-
-<h2><a name="home2.0">Projects</a></h2>
-
-<p>Since everything we do is project based, you can participate in any area or subject you are
-interested in and think you have something to contribute to.  </p>
-
-<p>We are open to all ideas, so feel free  to suggest an idea and the channel may offer to assist you with it.
+			<p>We are open to all ideas, so feel free  to suggest an idea and the channel may offer to assist you with it.
 Want to learn a language? You could suggest a project using it.</p>
 
-<h4>Currently We:</h4>
+			<h4>Currently We:</h4>
 
-<dl>
-    <dt>Collaborate on projects as a learning experience.</dt>
-      <dd>Bhottu, our IRC bot, was the result of one of these projects. Lots of people learned intermediate Python as a result.</dd>
+			<dl>
+				<dt>Collaborate on projects as a learning experience.</dt>
+				  <dd>Bhottu, our IRC bot, was the result of one of these projects. Lots of people learned intermediate Python as a result.</dd>
 
-    <dt>Have a friendly community for aspiring and expert programmers to exchange insights.</dt>
-</dl>
+				<dt>Have a friendly community for aspiring and expert programmers to exchange insights.</dt>
+			</dl>
+		</div>
 
-</div>
+		<div id="tutorials">
+			<h2>Tutorials</h2>
+			<p>You can find our tutorials here, but the interest for these was lost rather quickly, as there are many much better books and tutorials out there.</p>
+			<p>You can always polish up an existing tutorial or write a new one if you'd like, but it's not encouraged to do so. It's a fun thing to do if you are bored and have nothing to do, though.</p>
+			<p>These are the ones we have so far. If you want to submit an addition or a correction, ask in the IRC channel.</p>
+			<ul>
+			  <li><a href="/tutorials/cplusplus.html">C++ tutorial</a></li>
+			  <li><a href="/tutorials/bhottu.html">Manpage for bhottu</a></li>
+			  <li><a href="/tutorials/resources.html">Links to books and other useful sites</a></li>
+			</ul>
+			<p>Here is a <a href="/tutorials/README.txt">Guide</a> for tutorial writers.</p>
+		</div>
 
-<div id="tuts">
+		<div id="git">
+			<h2>Git</h2>
 
-<h2><a  name="home2.1">Tutorials</a></h2>
+			<p>We use git as our main tool for collaboration. Git is a distributed revision control system,
+			which allows multiple persons to participate on a software project. It tracks changes in software
+			made by users and allows a lot of control in versions. Even updates and edits to this website is handled trough git.</p>
+			<p>We have a organization called gentoomen in github, which acts as an umbrella for different
+			projects. Join our IRC channel to ask for access.</p>
+			<p>If you would like to help the community by writing a short tutorial on how to use git join our IRC channel.</p>
+		</div>
 
-<p>You can find our tutorials here, but the interest for these was lost rather quickly, as there are many much better books and tutorials out there.</p>
+		<div id="info">
+			<h2>Info</h2>
+			<h4>What are you waiting for? Pop in and say hello!</h4>
+			<ul>
+			  <li>Our Homepage: <a href="/">gentoomen.org</a></li>
+			  <li>Our git repository: <a href="http://github.com/gentoomen">github.com/gentoomen</a></li>
+			  <li>Our book library: <a href="http://books.gentoomen.org/">books.gentoomen.org</a></li>
+			  <li>Our IRC channel: <a href="irc://irc.rizon.net//g/sicp">#/g/sicp @ Rizon</a>
+				<ul>
+				  <li><a href="http://code.google.com/p/xchat-wdk/downloads/detail?name=XChat-WDK%201496-6.exe&can=2&q=">XChat-WDK (Windows)</a></li>
+				  <li><a href="http://irssi.org/download">irssi (Windows/Linux/Mac)</a></li>
+				  <li><a href="http://www.weechat.org/download/">Weechat (Linux)</a></li>
+				  <li>If you don't have access to an IRC Client you can use <a href="http://www.mibbit.com/">mibbit!</a></li>
+				</ul>
+			  </li>
+			</ul>
 
-<p>You can always polish up an existing tutorial or write a new one if you'd like, but it's not encouraged to do so. It's a fun thing to do if you are bored and have nothing to do, though.</p>
+		</div>
 
-<p>These are the ones we have so far. If you want to submit an addition or a correction, ask in the IRC channel.</p>
-<ul>
-  <li><a href="http://www.gentoomen.org/tutorials/cplusplus.html">C++ tutorial</a></li>
-  <li><a href="http://www.gentoomen.org/tutorials/bhottu.html">Manpage for bhottu</a></li>
-  <li><a href="http://www.gentoomen.org/tutorials/resources.html">Links to books and other useful sites</a></li>
-</ul>
-
-<p>
-Here is a <a href="http://www.gentoomen.org/tutorials/README.txt">Guide</a> for tutorial writers.</p>
-
-</div>
-
-
-<div id="git">
-
-<h2><a  name="home2.2"> Git</a></h2>
-
-<p>We use git as our main tool for collaboration. Git is a distributed revision control system,
-which allows multiple persons to participate on a software project. It tracks changes in software
-made by users and allows a lot of control in versions. Even updates and edits to this website is handled trough git.</p>
-<p>We have a organization called gentoomen in github, which acts as an umbrella for different
-projects. Join our IRC channel to ask for access.</p>
-<p>If you would like to help the community by writing a short tutorial on how to use git join our IRC channel.</p>
-
-</div>
-
-
-<div id="info">
-<h2><a name="home3.0">Info</a></h2>
-
-<h4>What are you waiting for? Pop in and say hello!</h4>
-
-<ul>
-  <li>Our Homepage: <a href="http://www.gentoomen.org/">gentoomen.org</a></li>
-  <li>Our git repository: <a href="http://github.com/gentoomen">github.com/gentoomen</a></li>
-  <li>Our book library: <a href="http://books.gentoomen.org/">books.gentoomen.org</a></li>
-  <li>Our IRC channel: <a href="irc://irc.rizon.net//g/sicp">#/g/sicp @ Rizon</a>
-  
-    <ul>
-      <li><a href="http://code.google.com/p/xchat-wdk/downloads/detail?name=XChat-WDK%201496-6.exe&can=2&q=">XChat-WDK (Windows)</a></li>
-      <li><a href="http://irssi.org/download">irssi (Windows/Linux/Mac)</a></li>
-      <li><a href="http://www.weechat.org/download/">Weechat (Linux)</a></li>
-      <li>If you don't have access to an IRC Client you can use <a href="http://www.mibbit.com/">mibbit!</a></li>
-    </ul>
-    
-    
-  </li>
-</ul>
-
-</div>
-
-</body>
+	</body>
 </html>
