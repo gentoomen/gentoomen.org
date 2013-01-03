@@ -1,42 +1,65 @@
 
 body {
-  background-color: #FFF8DC;
-  margin-right:20%;
-  margin-left:20%;
-  padding: 10px 10px 10px 10px;
-  font-family: sans-serif;
-  border: 1px solid black;
-  
+	background: url('http://pathg.com/i/91808.png') #333;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 10px 10px 10px 10px;
+	font: 16px/22px Georgia, serif;
+	color: #aaa;
+}
+
+body > div{
+	padding: 5px 15px;
+	background-color: rgba(0,0,0,.3);
+}
+
+h1, h2, h3, h4 {
+	color: #008C9E;
+	font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+h1 {
+	margin: 20px 0 30px 0;
+	text-align: center;
 }
 
 h2 {
-  border-bottom: 2px solid black;
+	border-bottom: 2px solid black;
 }
 
 dt {
-  padding-bottom: 2px;
-  }
-
-a {
-  text-decoration: none;
+	padding-bottom: 2px;
 }
 
-a:link {
-  color: #1426AE;
+a {
+	text-decoration: none;
+	color: #00DFFC;
 }
 
 a:hover {
-  text-decoration; none;
-  border-bottom: 1px solid #1426AE;
+	text-decoration; none;
+	border-bottom: 1px solid #00DFFC;
 }
 
 a:visited:hover {
-  text-decoration: none;
-  color: #6B1DB9;
-  border-bottom: 1px solid #6B1DB9;
+	text-decoration: none;
+	color: #005F6B;
+	border-bottom: 1px solid #005F6B;
 }
 
 ul, ol {
-  list-style: disc;
-  }
-  
+	list-style: disc;
+}
+
+p.code {
+	font-family: Droid Sans Mono, Deja Vu Sans Mono, monospace;
+	background-color: rgba(0,0,0,.3);
+	padding: 5px;
+	margin: 10px 0;
+}
+
+pre {
+	color: #ddd;
+	font-size: 10px;
+}
+
